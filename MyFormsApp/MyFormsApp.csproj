@@ -10,87 +10,120 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' " />
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|AnyCPU' ">
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Dev</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>DEV</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IntermediateOutputPath>obj\Dev</IntermediateOutputPath>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|iPhoneSimulator' ">
     <IntermediateOutputPath>obj\iPhoneSimulator\Dev</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Dev</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>DEV</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|iPhone' ">
     <IntermediateOutputPath>obj\iPhone\Dev</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Dev</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>DEV</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|iPhoneSimulator' ">
     <IntermediateOutputPath>obj\iPhoneSimulator\Uat</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Uat</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>UAT</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|AnyCPU' ">
     <IntermediateOutputPath>obj\Uat</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Uat</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>UAT</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|iPhone' ">
     <IntermediateOutputPath>obj\iPhone\Uat</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Uat</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>UAT</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|AnyCPU' ">
     <IntermediateOutputPath>obj\Qa</IntermediateOutputPath>
     <DebugType></DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Qa</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>QA</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|iPhoneSimulator' ">
     <IntermediateOutputPath>obj\iPhoneSimulator\Qa</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Qa</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>QA</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|iPhone' ">
     <IntermediateOutputPath>obj\iPhone\Qa</IntermediateOutputPath>
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Qa</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>QA</DefineConstants>
     <NoWarn></NoWarn>
-    <NoStdLib>false</NoStdLib>
+    <NoStdLib>true</NoStdLib>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Debug</IntermediateOutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType></DebugType>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\Debug</IntermediateOutputPath>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType></DebugType>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <IntermediateOutputPath>obj\iPhoneSimulator\Release</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <NoWarn></NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <IntermediateOutputPath>obj\iPhone\Release</IntermediateOutputPath>
+    <DebugType></DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <DefineConstants>RELEASE</DefineConstants>
+    <NoWarn></NoWarn>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="4.0.0.425677" />
