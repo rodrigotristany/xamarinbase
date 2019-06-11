@@ -1,0 +1,22 @@
+﻿{
+  "Dev": {
+    "AppCenterId": "440cdafd-8dfe-4a91-92da-103cc7d84e64",
+    "BaseApiUrl": "http://mywebsite-api-dev.azurewebsites.net/api/",
+    "B2CId": "440cdafd-8dfe-4a91-92da-103cc7d84e64"
+  },
+  "Qa": {
+    "AppCenterId": "440cdafd-8dfe-4a91-92da-103cc7d84e64",
+    "BaseApiUrl": "http://mywebsite-api-dev.azurewebsites.net/api/",
+    "B2CId": "440cdafd-8dfe-4a91-92da-103cc7d84e64"
+  },
+  "Uat": {
+    "AppCenterId": "440cdafd-8dfe-4a91-92da-103cc7d84e64",
+    "BaseApiUrl": "http://mywebsite-api-dev.azurewebsites.net/api/",
+    "B2CId": "440cdafd-8dfe-4a91-92da-103cc7d84e64"
+  },
+  "Prod": {
+    "AppCenterId": "440cdafd-8dfe-4a91-92da-103cc7d84e64",
+    "BaseApiUrl": "http://mywebsite-api-dev.azurewebsites.net/api/",
+    "B2CId": "440cdafd-8dfe-4a91-92da-103cc7d84e64"
+  }
+}
