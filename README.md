@@ -3,9 +3,7 @@ This project was created to be a kick up project for Xamarin Forms technology.
 
 The first instance is going to have the following libraries:
 - Autofac
-- Azure
 - FFImageLoading
-- Firebase
 - NewtonSoft Json library 
 - Plugin.Permissions
 - Plugin.CurrentActivity
