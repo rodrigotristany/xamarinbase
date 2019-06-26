@@ -38,4 +38,4 @@ namespace MyFormsApp.Droid
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
-} ]
+}
