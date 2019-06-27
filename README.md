@@ -13,4 +13,8 @@ The first instance is going to have the following libraries:
 - Xam.Plugin.Connectivity 
 - Xamanimation
 
-Feel free to increase this list!!
+1st version ready to be use at 06/27/2019
+
+The second instance is going to have the following libraries:
+
+Feel free to increase the list!!!
