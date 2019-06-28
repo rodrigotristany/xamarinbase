@@ -7,12 +7,20 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.Permissions;
+using MyFormsApp.Droid.Messages;
 
 namespace MyFormsApp.Droid
 {
-    [Activity(Label = "MyFormsApp", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(
+        Label = "MyFormsApp",
+        Icon = "@mipmap/icon",
+        Theme = "@style/MainTheme",
+        MainLauncher = false,
+        ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        private MessageHandler messageHandler;
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -29,6 +37,19 @@ namespace MyFormsApp.Droid
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Init(this, savedInstanceState);
 
             LoadApplication(new App());
+
+            if (Intent.Extras != null)
+            {
+                try
+                {
+                    //TODO: Before this call we have to instanciate the class
+                    messageHandler.ParseMessage(Intent.Extras);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("[Android] Message error " + ex.Message);
+                }
+            }
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

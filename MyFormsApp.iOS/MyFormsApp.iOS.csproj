@@ -178,6 +178,8 @@
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Messages\MessageHandler.cs" />
+    <Compile Include="Messages\MessageData.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
@@ -264,5 +266,8 @@
       <Project>{C4412405-4D8B-4F12-A5D5-AE28EEE4B62B}</Project>
       <Name>MyFormsApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Messages\" />
   </ItemGroup>
 </Project>

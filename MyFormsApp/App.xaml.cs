@@ -1,6 +1,8 @@
-﻿using System;
+﻿using System.IO;
+using System.Reflection;
+using MyFormsApp.AppEnvironment;
+using Newtonsoft.Json;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace MyFormsApp
 {
@@ -9,7 +11,7 @@ namespace MyFormsApp
         public App()
         {
             InitializeComponent();
-
+            SetEnvironment();
             MainPage = new MainPage();
         }
 
@@ -26,6 +28,34 @@ namespace MyFormsApp
         protected override void OnResume()
         {
             // Handle when your app resumes
+        }
+
+        private void SetEnvironment()
+        {
+            var assembly = typeof(App).GetTypeInfo().Assembly;
+            Stream stream = assembly.GetManifestResourceStream("MyFormsApp.AppEnvironment.Environments.json");
+
+            string text = "";
+            using (var reader = new System.IO.StreamReader(stream))
+            {
+                text = reader.ReadToEnd();
+            }
+            Environments env = JsonConvert.DeserializeObject<Environments>(text);
+
+#if __DEV__
+            Environments.Current = env.Dev;
+#elif __QA__
+            Environments.Current = env.Qa;
+#elif __UAT__
+            Environments.Current = env.Uat;
+#elif __PROD__
+            Environments.Current = env.Production;
+#elif Debug
+            Environments.Current = env.Dev;
+            AppCenter.LogLevel = LogLevel.Verbose;
+#else
+            Environments.Current = env.Prod;
+#endif
         }
     }
 }

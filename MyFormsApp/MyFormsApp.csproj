@@ -138,4 +138,13 @@
     <PackageReference Include="Plugin.Permissions" Version="3.0.0.12" />
     <PackageReference Include="Xamanimation" Version="1.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppEnvironment\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="AppEnvironment\Environments.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppEnvironment\Environments.json" />
+  </ItemGroup>
 </Project>

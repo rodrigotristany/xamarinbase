@@ -1,0 +1,30 @@
+﻿{
+  "Dev": {
+    "AppCenterId": "",
+    "BaseApiUrl": "",
+    "AndroidAppSecret": "",
+    "iOSAppSecret": "",
+    "FirebaseSenderId": ""
+  },
+  "Qa": {
+    "AppCenterId": "",
+    "BaseApiUrl": "",
+    "AndroidAppSecret": "",
+    "iOSAppSecret": "",
+    "FirebaseSenderId": ""
+  },
+  "Uat": {
+    "AppCenterId": "",
+    "BaseApiUrl": "",
+    "AndroidAppSecret": "",
+    "iOSAppSecret": "",
+    "FirebaseSenderId": ""
+  },
+  "Prod": {
+    "AppCenterId": "",
+    "BaseApiUrl": "",
+    "AndroidAppSecret": "",
+    "iOSAppSecret": "",
+    "FirebaseSenderId": ""
+  }
+}
