@@ -16,5 +16,6 @@ The first instance is going to have the following libraries:
 1st version ready to be use at 06/27/2019
 
 The second instance is going to have the following libraries:
+- MVVM Framework
 
 Feel free to increase the list!!!
