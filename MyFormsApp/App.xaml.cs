@@ -48,11 +48,8 @@ namespace MyFormsApp
             Environments.Current = env.Qa;
 #elif __UAT__
             Environments.Current = env.Uat;
-#elif __PROD__
-            Environments.Current = env.Production;
-#elif Debug
+#elif DEBUG
             Environments.Current = env.Dev;
-            AppCenter.LogLevel = LogLevel.Verbose;
 #else
             Environments.Current = env.Prod;
 #endif

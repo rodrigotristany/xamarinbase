@@ -4,8 +4,6 @@
     {
         public static Environment Current { set; get; }
 
-        public Environment Debug { get; set; }
-        public Environment Release { get; set; }
         public Environment Dev {get; set; }
         public Environment Qa { get; set; }
         public Environment Uat { get; set; }

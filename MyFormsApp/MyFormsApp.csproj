@@ -15,7 +15,7 @@
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Dev</OutputPath>
-    <DefineConstants>DEV</DefineConstants>
+    <DefineConstants>__DEV__;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <IntermediateOutputPath>obj\Dev</IntermediateOutputPath>
     <NoWarn></NoWarn>
@@ -53,7 +53,7 @@
     <DebugType></DebugType>
     <Optimize>false</Optimize>
     <OutputPath>bin\Uat</OutputPath>
-    <DefineConstants>UAT</DefineConstants>
+    <DefineConstants>__UAT__;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
     <NoWarn></NoWarn>
     <NoStdLib>true</NoStdLib>
   </PropertyGroup>
@@ -71,7 +71,7 @@
     <DebugType></DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Qa</OutputPath>
-    <DefineConstants>QA</DefineConstants>
+    <DefineConstants>__QA__;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
     <NoWarn></NoWarn>
     <NoStdLib>true</NoStdLib>
   </PropertyGroup>

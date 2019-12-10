@@ -78,7 +78,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|iPhoneSimulator' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Dev</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__DEV__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -90,7 +90,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|iPhone' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Dev</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__DEV__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -103,7 +103,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|iPhoneSimulator' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Uat</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__UAT__:</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -126,7 +126,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|iPhone' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Uat</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__UAT__:</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -150,7 +150,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|iPhoneSimulator' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhoneSimulator\Qa</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__QA__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>
@@ -162,7 +162,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|iPhone' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\iPhone\Qa</OutputPath>
-    <DefineConstants></DefineConstants>
+    <DefineConstants>__IOS__;__MOBILE__;__UNIFIED__;__QA__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
     <CodesignKey>iPhone Developer</CodesignKey>
     <MtouchNoSymbolStrip>true</MtouchNoSymbolStrip>

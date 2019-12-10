@@ -27,6 +27,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\Dev</OutputPath>
+    <DefineConstants>__DEV__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Dev|iPhoneSimulator' ">
@@ -47,6 +48,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\Uat</OutputPath>
+    <DefineConstants>__UAT__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Uat|iPhone' ">
@@ -57,6 +59,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|AnyCPU' ">
     <Optimize>false</Optimize>
     <OutputPath>bin\Qa</OutputPath>
+    <DefineConstants>__QA__;</DefineConstants>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Qa|iPhoneSimulator' ">
